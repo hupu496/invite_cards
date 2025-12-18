@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadarsh & Sonakshi's Wedding Celebration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       html, body {
+   width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix sections */
+section, .section {
+    height: auto !important;
+    min-height: auto;
+    overflow: visible;
+}
+
+        :root {
+            --gold: #D4AF37;
+            --maroon: #800020;
+            --cream: #FFF8E7;
+            --dark-red: #5E1914;
+            --light-gold: #F4E4A6;
+        }
+
+        /* body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cream);
+            color: #333;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+
+        } */
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #D4AF37;
+        }
+
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--maroon), var(--dark-red));
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+        }
+
+        .couple-names {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease;
+        }
+          .couple-names {
+      font-family: "Playwrite DE SAS", cursive;
+      font-size: 60px;
+      color: #FFD700;
+      text-shadow: 2px 2px 8px #f3e507;
+      letter-spacing: 2px;
+      transition: all 0.3s ease;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    .couple-names:hover {
+      transform: scale(1.05);
+      text-shadow: 3px 3px 15px #f3e507;
+    }
+
+        .wedding-date {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        .and-symbol {
+      color: #D4AF37;
+      font-size: 90px;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+        .floral-decoration {
+            position: absolute;
+            width: 150px;
+            opacity: 0.7;
+        }
+
+        .floral-top-left {
+            top: 10px;
+            left: 10px;
+            transform: rotate(-15deg);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floral-top-right {
+            top: 10px;
+            right: 10px;
+            transform: rotate(15deg);
+            animation: float 6s ease-in-out infinite 1s;
+        }
+
+        .floral-bottom-left {
+            bottom: 10px;
+            left: 10px;
+            transform: rotate(15deg);
+            animation: float 6s ease-in-out infinite 2s;
+        }
+
+        .floral-bottom-right {
+            bottom: 10px;
+            right: 10px;
+            transform: rotate(-15deg);
+            animation: float 6s ease-in-out infinite 3s;
+        }
+
+        /* Introduction Section */
+        .introduction {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--gold);
+        }
+
+        .invitation-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .bride-groom-img {
+        width: 50%;
+        height: 208px;
+        border-radius: 10%;
+        object-fit: cover;
+        border: 5px solid var(--gold);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        animation: moveUp 1s ease-out;
+        }
+
+        /* ✨ Keyframes for Down-to-Up motion */
+        @keyframes moveUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        }
+                /* Events Section */
+        .events {
+            padding: 60px 20px;
+            background-color: var(--cream);
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .event-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .event-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .event-header {
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        width: 100%;
+            height: 240px; /* adjust height you want */
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        /* Background video */
+        .event-header .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: 1;
+            background:#800020;
+        }
+
+        /* Gradient overlay */
+        .event-header .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgb(99 41 55 / 70%), rgb(146 55 55 / 70%));
+            z-index: 1;
+        }
+
+        /* Content above video */
+        .event-header * {
+            position: relative;
+            z-index: 2;
+        }
+        .event-header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.35);
+            z-index: 2;
+        }
+                .event-name {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .event-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .event-date, .event-time, .event-venue {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .event-date i, .event-time i, .event-venue i {
+            margin-right: 10px;
+            color: var(--maroon);
+        }
+        .event-icon,
+        .event-name {
+            position: relative;
+            z-index: 3;
+            color: #fff;
+        }
+
+        /* Countdown Section */
+        .countdown {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--maroon), var(--dark-red));
+            color: white;
+            text-align: center;
+        }
+
+        .countdown-title {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 20px 15px;
+            min-width: 80px;
+            backdrop-filter: blur(5px);
+        }
+
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    width: 100%;
+    background: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-red);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .footer-text {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .rsvp-btn {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--maroon);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .rsvp-btn:hover {
+            background-color: var(--light-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(-15deg);
+            }
+            50% {
+                transform: translateY(-10px) rotate(-15deg);
+            }
+            100% {
+                transform: translateY(0) rotate(-15deg);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 480px) {
+            .couple-names {
+                font-size: 2rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .countdown-item {
+                min-width: 70px;
+                padding: 15px 10px;
+            }
+            
+            .countdown-number {
+                font-size: 1.7rem;
+            }
+        }
+         /* Petal Container */
+        .petal-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Rose Petal Styles */
+        .rose-petal {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: linear-gradient(135deg, #ff4081, #c2185b);
+            border-radius: 50% 0 50% 50%;
+            transform: rotate(45deg);
+            opacity: 0.8;
+            filter: drop-shadow(0 0 5px rgba(194, 24, 91, 0.5));
+            animation: fall linear infinite;
+        }
+
+        /* Lotus Petal Styles */
+        
+
+        /* Falling animation for rose petals */
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        /* Circular floating animation for lotus petals */
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(50px, 50px) rotate(90deg);
+            }
+            50% {
+                transform: translate(0, 100px) rotate(180deg);
+            }
+            75% {
+                transform: translate(-50px, 50px) rotate(270deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .rose-petal {
+                width: 20px;
+                height: 20px;
+            }
+            
+           
+        }
+        .upi-floating-btn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.upi-floating-btn img {
+    width: 60%;
+}
+.upi-floating-btn {
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+.invitation-card {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 40px 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    font-family: 'Noto Serif Devanagari', serif;
+}
+
+.invitation-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.invitation-sub {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.invitation-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.invitation-block {
+    width: 40%;
+    text-align: left;
+}
+
+.name-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Joining Hand – BOX */
+.invitation-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Image – desktop */
+.invitation-mid img {
+    width: 320px;        /* Normal size */
+    height: auto;
+    max-width: 100%;
+}
+
+/* 📱 MOBILE – BIG BUT SAFE */
+@media (max-width: 768px) {
+    .invitation-mid img {
+        width: 100%;          /* Fill the box */
+        max-width: 380px;     /* Control max size */
+    }
+}
+
+
+
+.event-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding: 6px 20px;
+}
+
+.event-desc {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.poetry-box {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.invite-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.family-block {
+    width: 45%;
+    text-align: left;
+}
+
+.family-block h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.and-symbol {
+    margin: 0 8px;
+    font-size: 28px;
+    font-weight: normal;
+    color: #d1c44c; /* beautiful pink/maroon tone */
+}
+.header-video {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+}
+/* Mobile fix */
+@media (max-width: 768px) {
+    .header-video {
+        min-height: 60vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="floral-decoration floral-top-left">
+            <i class="fas fa-leaf" style="font-size: 80px; color: var(--light-gold);"></i>
+        </div>
+        <div class="floral-decoration floral-top-right">
+            <i class="fas fa-leaf" style="font-size: 80px; color: var(--light-gold);"></i>
+        </div>
+        <div class="floral-decoration floral-bottom-left">
+            <i class="fas fa-leaf" style="font-size: 80px; color: var(--light-gold);"></i>
+        </div>
+        <div class="floral-decoration floral-bottom-right">
+            <i class="fas fa-leaf" style="font-size: 80px; color: var(--light-gold);"></i>
+        </div>
+        
+        <div class="header-content container">
+           <h1 class="couple-names">Sonakshi <span class="and-symbol">weds</span> Aadarsh</h1>
+            <!-- MP4 video replacing the image -->
+    <video autoplay muted loop playsinline class="header-video">
+        <source src="image/Video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+            <p class="wedding-date">6 Feburary 2026</p>
+            <p>Together with our families, we invite you to celebrate our wedding</p>
+        </div>
+    </header>
+    <audio id="weddingMusic" loop preload="auto">
+    <source src="songs.mp4" type="audio/mpeg">
+</audio>
+
+<script>
+    const bgMusic = document.getElementById("weddingMusic");
+    bgMusic.volume = 0.3;
+
+    let musicStarted = false;
+
+    function playMusic() {
+        if (musicStarted) return;
+
+        bgMusic.play()
+            .then(() => {
+                musicStarted = true;
+                console.log("Music started!");
+                removeListeners();
+            })
+            .catch(err => {
+                console.log("Autoplay blocked, waiting for interaction...");
+            });
+    }
+
+    function handleInteraction() {
+        if (!musicStarted) playMusic();
+    }
+
+    function removeListeners() {
+        window.removeEventListener("scroll", handleInteraction);
+        window.removeEventListener("click", handleInteraction);
+        window.removeEventListener("touchstart", handleInteraction);
+    }
+
+    // 🔹 Try autoplay on page load
+    window.addEventListener("load", playMusic);
+
+    // 🔹 Fallback to first interaction
+    window.addEventListener("scroll", handleInteraction, { once: true });
+    window.addEventListener("click", handleInteraction, { once: true });
+    window.addEventListener("touchstart", handleInteraction, { once: true });
+</script>
+
+
+   <div class="petal-container" id="petalContainer"></div>
+    <!-- Introduction Section -->
+<section class="invitation-card">
+    <div class="container">
+
+        <h2 class="invitation-heading">मान्यवर,</h2>
+        <p class="invitation-sub">परमपिता परमात्मा की असीम कृपा से</p>
+
+        <div class="invitation-row">
+
+           <!-- Bride Side -->
+            <div class="invitation-block">
+                <h3 class="name-title">हृदयकन्या सोनाक्षी</h3>
+                <p><strong>सुपुत्री :</strong> श्रीमती सीमा सिन्हा एवं श्री विनय कुमार</p>
+                <p>ग्राम - भोरेहाँ, पोस्ट - पताही</p>
+                <p>जिला - सीतामढ़ी</p>
+            </div>            
+            <!-- Mid Icon -->
+            <div class="invitation-mid">
+               <img src="image/Joining_hand-removebg-preview.png" alt="joining hands">
+            </div>
+           <!-- Groom Side -->
+            <div class="invitation-block">
+                <h3 class="name-title">हृदयांश आदर्श</h3>
+                <p><strong>सुपुत्र :</strong> श्रीमती भारती श्रीवास्तव एवं श्री अशोक कुमार श्रीवास्तव</p>
+                <p><strong>सुपौत्र :</strong> स्मृतिशेष अवध बिहारी प्रसाद</p>
+                <p>आर.एन.ए.आर. कॉलेज के पीछे, श्रीकृष्णपुरी (पश्चिमी)</p>
+                <p>समस्तीपुर</p>
+            </div>
+        </div>
+
+        <h3 class="event-title">के मांगलिक परिचयोत्सव</h3>
+        <p class="event-desc">
+            के शुभ अवसर पर आप पधार कर वर-वधू को आशीर्वाद प्रदान कर हमें अनुगृहित करें।
+        </p>
+
+        <!-- Poetic Box -->
+        <div class="poetry-box">
+            <p>
+                पलक पर चाँद उगरेलं, सितारे मुसुकुराइए,<br>
+                हमे खुशी तब होही जब आप<br>
+                हमारें घर की शोभा बढ़ाइये। <br>
+                <strong>सुरभि, श्वेतांक, कार्तिकेय</strong>
+            </p>
+        </div>
+
+        <div class="invite-row">
+
+            <!-- Groom Side Family -->
+            <div class="family-block">
+                <h4>दर्शानाभिलाषी :-</h4>
+                <p>अनिल कुमार प्रसाद</p>
+                <p>सुनील कुमार प्रसाद</p>
+                <p>रेषु, शुभम एवं समस्त श्रीवास्तव परिवार</p>
+            </div>
+
+            <!-- Bride Side Family -->
+            <div class="family-block">
+                <h4>आकांक्षी :-</h4>
+                <p><strong>अशोक कुमार श्रीवास्तव</strong></p>
+                <p>मो.- 9430026562, 7352986122</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Events Section -->
+    <section class="events">
+        <div class="container">
+            <h2 class="section-title">Wedding Events</h2>
+            <div class="events-grid">
+                <!-- Tilak Ceremony -->
+                <div class="event-card" id="tilak">
+                    <div class="event-header">
+                        <video class="bg-video" autoplay muted loop playsinline>
+                            <source src="image/tilak.mp4" type="video/mp4">
+                        </video>
+
+                        <div class="overlay"></div>
+
+                        <div class="event-icon">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                        <h3 class="event-name">Tilak Ceremony</h3>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><i class="far fa-calendar"></i> 2 Feburary 2026</p>
+                        <p class="event-venue"><i class="fas fa-map-marker-alt"></i> Groom's Residence</p>
+                    </div>
+                </div>
+
+                <!-- Haldi Ceremony -->
+            <div class="event-card" id="haldi">
+    <div class="event-header">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="image/haldi.mp4" type="video/mp4">
+        </video>
+
+        <div class="event-icon">
+            <i class="fas fa-spa"></i>
+        </div>
+        <h3 class="event-name">Haldi Ceremony</h3>
+    </div>
+
+    <div class="event-body">
+        <p class="event-date">
+            <i class="far fa-calendar"></i> 05 February 2026
+        </p>
+        <p class="event-venue">
+            <i class="fas fa-map-marker-alt"></i> Both Residences
+        </p>
+    </div>
+</div>
+
+
+                <!-- Mehendi Ceremony -->
+                <!-- Wedding Ceremony -->
+                <div class="event-card" id="wedding">
+                    <div class="event-header">
+                         <video class="bg-video" autoplay muted loop playsinline>
+        <source src="image/shaadi.mp4" type="video/mp4">
+    </video>
+                        <div class="event-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h3 class="event-name">Wedding Ceremony</h3>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><i class="far fa-calendar"></i>06 Feburary 2026</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 7:00 PM onwards</p>
+                        <p class="event-venue"><i class="fas fa-map-marker-alt"></i>Hotel Myra International</p>
+                    </div>
+                </div>
+
+                <!-- Reception -->
+                <div class="event-card" id="reception">
+                    <div class="event-header">
+                          <video class="bg-video" autoplay muted loop playsinline>
+        <source src="image/receiption.mp4" type="video/mp4">
+    </video>
+                        <div class="event-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="event-name">Reception</h3>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-date"><i class="far fa-calendar"></i> 08 Feburary 2026</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 6:30 PM onwards</p>
+                        <p class="event-venue"><i class="fas fa-map-marker-alt"></i> Home(Samastipur)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown">
+        <div class="container">
+            <h2 class="section-title countdown-title">Countdown to the Big Day</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Memories</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="image/DSC_3523.JPG" alt="Wedding Preparation">
+                </div>
+                <div class="gallery-item">
+                    <img src="image/DSC_3524.JPG" alt="Indian Wedding">
+                </div>
+                <div class="gallery-item">
+                    <img src="image/DSC_3533.JPG" alt="Bride and Groom">
+                </div>
+                <div class="gallery-item">
+                    <img src="image/DSC_3537.JPG" alt="Wedding Celebration">
+                </div>
+            </div>
+        </div>
+    </section>
+<a href="upi://pay?pa=aadarsh629-1@okicici&pn=Aadarsh&cu=INR" class="upi-floating-btn">
+    <img src="image/phonepe-icon.png" alt="Pay with Google Pay">
+</a>
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <p class="footer-text">We look forward to celebrating with you!</p>
+        <p>With love,<br>Aadarsh & Sonakshi</p>
+
+        <p class="designed-by">
+            Designed by 
+            <a href="https://saravashray.in/software" style="
+    text-decoration: none;
+    color: yellow;
+" target="_blank">
+                Sarvashray
+            </a>
+        </p>
+    </div>
+</footer>
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const weddingDate = new Date('Feburary 06, 2026 18:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.querySelector('.countdown-container').innerHTML = "<h3>We're married! Thank you for celebrating with us!</h3>";
+            }
+        }
+
+        const countdownTimer = setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Scroll Animations
+        function checkVisibility() {
+            const eventCards = document.querySelectorAll('.event-card');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            eventCards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (cardTop < windowHeight * 0.85) {
+                    card.classList.add('visible');
+                }
+            });
+            
+            galleryItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (itemTop < windowHeight * 0.85) {
+                    item.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+
+        // Event Card Hover Effects
+        const eventCards = document.querySelectorAll('.event-card');
+        eventCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+      <script>
+        function createPetal(type) {
+            const petalContainer = document.getElementById('petalContainer');
+            const petal = document.createElement('div');
+            
+            if (type === 'rose') {
+                petal.className = 'rose-petal';
+                
+                // Random position at the top
+                const startX = Math.random() * window.innerWidth;
+                petal.style.left = `${startX}px`;
+                petal.style.top = '-30px';
+                
+                // Random animation duration
+                const duration = 5 + Math.random() * 10;
+                petal.style.animationDuration = `${duration}s`;
+                
+                // Random size variation
+                const size = 0.7 + Math.random() * 0.6;
+                petal.style.transform = `scale(${size}) rotate(45deg)`;
+                
+                // Random color variation
+                const hue = 330 + Math.random() * 20;
+                petal.style.background = `linear-gradient(135deg, hsl(${hue}, 100%, 65%), hsl(${hue}, 100%, 45%))`;
+                
+            } else if (type === 'lotus') {
+                petal.className = 'lotus-petal';
+                
+                // Random position
+                const startX = Math.random() * window.innerWidth;
+                const startY = Math.random() * window.innerHeight;
+                petal.style.left = `${startX}px`;
+                petal.style.top = `${startY}px`;
+                
+                // Random animation duration and delay
+                const duration = 15 + Math.random() * 20;
+                const delay = Math.random() * 5;
+                petal.style.animationDuration = `${duration}s`;
+                petal.style.animationDelay = `${delay}s`;
+                
+                // Random size variation
+                const size = 0.6 + Math.random() * 0.8;
+                petal.style.transform = `scale(${size})`;
+                
+                // Random color variation
+                const hue = 300 + Math.random() * 30;
+                petal.style.background = `linear-gradient(135deg, hsl(${hue}, 100%, 65%), hsl(${hue}, 100%, 45%))`;
+            }
+            
+            petalContainer.appendChild(petal);
+            
+            // Remove petal after animation completes (for rose petals)
+            if (type === 'rose') {
+                setTimeout(() => {
+                    if (petal.parentNode) {
+                        petal.parentNode.removeChild(petal);
+                    }
+                }, parseFloat(petal.style.animationDuration) * 1000);
+            }
+        }
+
+        // Create initial petals
+        function initializePetals() {
+            // Create rose petals (falling)
+            for (let i = 0; i < 15; i++) {
+                setTimeout(() => createPetal('rose'), i * 300);
+            }
+            
+            // Create lotus petals (floating in circular motion)
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => createPetal('lotus'), i * 500);
+            }
+        }
+
+        // Continuous creation of rose petals
+        function startRosePetalFlow() {
+            setInterval(() => {
+                createPetal('rose');
+            }, 500);
+        }
+
+        // Continuous creation of lotus petals (less frequent)
+        function startLotusPetalFlow() {
+            setInterval(() => {
+                createPetal('lotus');
+            }, 3000);
+        }
+
+        // Initialize when page loads
+        window.addEventListener('load', () => {
+            initializePetals();
+            startRosePetalFlow();
+            startLotusPetalFlow();
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            const petals = document.querySelectorAll('.lotus-petal');
+            petals.forEach(petal => {
+                if (parseFloat(petal.style.left) > window.innerWidth || 
+                    parseFloat(petal.style.top) > window.innerHeight) {
+                    petal.remove();
+                }
+            });
+        });
+       class SmoothScroll {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.addSmoothScrollCSS();
+        this.handleAnchorLinks();
+    }
+
+    addSmoothScrollCSS() {
+        const style = document.createElement('style');
+        style.textContent = `
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                -webkit-overflow-scrolling: touch;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    handleAnchorLinks() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (!target) return;
+
+                e.preventDefault();
+
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }
+}
+
+new SmoothScroll();
+    </script>
+</body>
+</html>
